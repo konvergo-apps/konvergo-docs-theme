@@ -31,20 +31,20 @@
 }
 
 @mixin secondary {
-  --bs-btn-color: #{$black-1000};
-  --bs-btn-bg: transparent;
-  --bs-btn-border-color: #{$black-1000};
-  --bs-btn-hover-color: #{$black-1000};
-  --bs-btn-hover-bg: #343433;
-  --bs-btn-hover-border-color: #343433;
+  --bs-btn-color: #{$red-1000};
+  --bs-btn-bg: #{$red-100};
+  --bs-btn-border-color: #{$red-100};
+  --bs-btn-hover-color: #{$white-800};
+  --bs-btn-hover-bg: #{$red-900};
+  --bs-btn-hover-border-color: #{$red-900};
   --bs-btn-focus-shadow-rgb: 0, 0, 0, 0;
-  --bs-btn-active-color: $white;
-  --bs-btn-active-bg: #474746;
-  --bs-btn-active-border-color: #474746;
+  --bs-btn-active-color: #{$white-800};
+  --bs-btn-active-bg: #{$red-800};
+  --bs-btn-active-border-color: #{$red-800};
   --bs-btn-active-shadow: 0;
-  --bs-btn-disabled-color: #EFEFEF;
-  --bs-btn-disabled-bg: #BDBDBC;
-  --bs-btn-disabled-border-color: #BDBDBC;
+  --bs-btn-disabled-color: #{$red-200};
+  --bs-btn-disabled-bg: #F5F0F1;
+  --bs-btn-disabled-border-color: #F5F0F1;
   @include common;
 }
 

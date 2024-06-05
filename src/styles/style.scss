@@ -12,6 +12,8 @@
 
 @use './pages/login' as *;
 
+@use './utils/variables' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
@@ -70,7 +72,7 @@
 }
 
 :root[data-bs-theme=light] .sidebar-contents-container {
-  background-color: #F9E4EB !important;
+  background-color: $red-100 !important;
   border-right: 4px solid var(--primary);
 
   &.open {
@@ -81,7 +83,7 @@
 
 :root[data-bs-theme=light] .grw-sidebar-nav {
   // background-color: var(--primary);
-  background-color: #242930;
+  background-color: $black-1000;
 
   .btn-group {
     transition: none !important;
@@ -160,23 +162,23 @@
   .wiki {
     a {
       &:not(.alert-link) {
-        color: var(--bs-body-color) !important;
+        color: $red-1000 !important;
         text-decoration: none;
-        border-bottom: solid 1.5px var(--bs-body-color);
+        border-bottom: solid 1.5px $red-1000;
 
         &:hover {
-          color: #343433 !important;
-          border-bottom: solid 1.5px #343433;
+          color: $red-900 !important;
+          border-bottom: solid 1.5px $red-900;
         }
 
         &:active {
-          color: #474746 !important;
-          border-bottom: solid 1.5px #474746;
+          color: $red-800 !important;
+          border-bottom: solid 1.5px $red-800;
         }
 
         &:visited {
-          color: #D80E41 !important;
-          border-bottom: solid 1.5px #D80E41;
+          color: $red-1100 !important;
+          border-bottom: solid 1.5px $red-1100;
         }
       }
     }
@@ -207,13 +209,13 @@ a {
     color: var(--bs-body-color);
 
     &:hover {
-      color: #343433;
-      border-bottom: solid 1px #343433;
+      color: $red-900;
+      border-bottom: solid 1.5px $red-900;
     }
 
     &:active {
-      color: #474746;
-      border-bottom: solid 1.5px #474746;
+      color: $red-800;
+      border-bottom: solid 1.5px $red-800;
     }
   }
 }
