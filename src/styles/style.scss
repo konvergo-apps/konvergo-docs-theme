@@ -1,5 +1,3 @@
-@use './variables' as *;
-@use './bootstrap/variables' as *;
 @use './theme/hsl-functions' as hsl;
 
 @use './atoms/alert' as *;
@@ -18,22 +16,19 @@
 
 
 // META
+
 /* Regroups native variables that are used across the website */
 :root[data-bs-theme=light] {
   --grw-sidebar-nave-bg: var(--bs-body-color);
-
   --grw-sidebar-nav-btn-color: #EEEFF2;
   --grw-sidebar-nav-btn-hover-bg: #343433;
   --grw-sidebar-nav-btn-hover-color: #EEEFF2;
   --grw-sidebar-nav-btn-active-color: #EEEFF2;
   --grw-sidebar-nav-btn-active-bg: #474746;
-
   --grw-highlight-100: var(--primary);
-
   --bs-body-color: hsl(var(--bs-body-color-hs), var(--bs-body-color-l));
   --bs-body-color-hs: 215, 14%;
   --bs-body-color-l: 16%;
-
   --bs-body-bg: var(--bgcolor-global);
 
   --bs-code-color: var(--primary);
