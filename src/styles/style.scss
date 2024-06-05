@@ -58,8 +58,8 @@
 
   // Background colors
   --bgcolor-global: hsl(var(--bgcolor-global-hs),var(--bgcolor-global-l));
-  --bgcolor-global-hs: 225,13%;
-  --bgcolor-global-l: 97%;
+  --bgcolor-global-hs: 210,67%;
+  --bgcolor-global-l: 99%;
   --bgcolor-inline-code: var(--bs-body-color); //optional
   --bgcolor-card: var(--primary);
   --bgcolor-blinked-section: #{hsl.alpha(var(--primary), 90%)};
@@ -75,7 +75,7 @@
 }
 
 :root[data-bs-theme=light] .sidebar-contents-container {
-  background-color: #EFE5D4 !important;
+  background-color: #F9E4EB !important;
   border-right: 4px solid var(--primary);
 
   &.open {
@@ -179,8 +179,8 @@
         }
 
         &:visited {
-          color: #F5A55C !important;
-          border-bottom: solid 1.5px #F5A55C;
+          color: #D80E41 !important;
+          border-bottom: solid 1.5px #D80E41;
         }
       }
     }
