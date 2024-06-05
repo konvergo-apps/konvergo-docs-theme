@@ -10,7 +10,8 @@
   "scripts": {
     "build": "vite build",
     "build:w": "yarn build -w",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepare": "husky"
   },
   "dependencies": {},
   "devDependencies": {
