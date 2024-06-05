@@ -1,7 +1,7 @@
 {
-  "name": "growi-plugin-theme-numigi",
+  "name": "growi-plugin-theme-konvergo",
   "version": "0.1.1-1",
-  "description": "GROWI plugin for the Numigi theme",
+  "description": "GROWI plugin for the Konvergo theme",
   "license": "MIT",
   "main": "dist/libs/index.js",
   "files": [
@@ -48,7 +48,7 @@
     ],
     "themes": [
       {
-        "name": "Numigi",
+        "name": "Konvergo",
         "manifestKey": "src/styles/style.scss",
         "schemeType": "light",
         "lightBg": "#EEEFF2",
