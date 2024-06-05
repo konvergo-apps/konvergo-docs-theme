@@ -10,8 +10,7 @@
   "scripts": {
     "build": "vite build",
     "build:w": "yarn build -w",
-    "test": "vitest run",
-    "pre-commit": "run-p test && run-p build"
+    "test": "vitest run"
   },
   "dependencies": {},
   "devDependencies": {
