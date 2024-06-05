@@ -1,0 +1,16 @@
+@use '../utils/variables' as *;
+
+code {
+  background-color: $black-1000;
+}
+
+.code {
+  &-inline {
+    color: $yellow-1000;
+    background-color: $black-1000;
+  }
+
+  &-highlighted {
+    background-color: $black-1000 !important;
+  }
+}
