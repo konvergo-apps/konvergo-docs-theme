@@ -13,9 +13,7 @@
     "lint:biome": "biome check ./",
     "lint:styles": "stylelint src/**/*.scss",
     "lint": "run-p lint:*",
-    "test": "vitest run",
-    "// preview": "vite preview",
-    "preview": "echo 'Sorry, not implemented.'"
+    "test": "vitest run"
   },
   "dependencies": {},
   "devDependencies": {
