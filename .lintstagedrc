@@ -1,4 +1,0 @@
-{
-  "*.json": "yarn test .",
-  "*.scss": "stylelint"
-}
