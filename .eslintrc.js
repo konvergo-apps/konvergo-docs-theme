@@ -1,17 +1,17 @@
 module.exports = {
-    extends: [
-      'weseek/typescript',
-    ],
-    env: {
+  extends: [
+    'weseek/typescript',
+  ],
+  env: {
+  },
+  globals: {
+  },
+  settings: {
+    // resolve path aliases by eslint-import-resolver-typescript
+    'import/resolver': {
+      typescript: {},
     },
-    globals: {
-    },
-    settings: {
-      // resolve path aliases by eslint-import-resolver-typescript
-      'import/resolver': {
-        typescript: {},
-      },
-    },
-    rules: {
-    },
-  };
+  },
+  rules: {
+  },
+};

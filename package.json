@@ -1,64 +1,64 @@
 {
-    "name": "growi-plugin-theme-konvergo",
-    "version": "0.1.1-1",
-    "description": "GROWI plugin for the Konvergo theme",
-    "license": "MIT",
-    "main": "dist/libs/index.js",
-    "files": [
-      "dist"
+  "name": "growi-plugin-theme-numigi",
+  "version": "0.1.1-1",
+  "description": "GROWI plugin for the Numigi theme",
+  "license": "MIT",
+  "main": "dist/libs/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "build:w": "yarn build -w",
+    "lint:eslint": "eslint --quiet \"**/*.{js,jsx,ts,tsx}\"",
+    "lint:styles": "stylelint src/**/*.scss",
+    "lint": "run-p lint:*",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-innertext": "^1.1.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "bootstrap": "^4.6.1",
+    "eslint": "^8.18.0",
+    "eslint-config-next": "^12.1.6",
+    "eslint-config-weseek": "^2.1.0",
+    "eslint-import-resolver-typescript": "^3.2.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-regex": "^1.10.0",
+    "jest": "^29.1.2",
+    "sass": "^1.55.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.5"
+  },
+  "growiPlugin": {
+    "schemaVersion": "4",
+    "types": [
+      "theme"
     ],
-    "scripts": {
-      "build": "vite build",
-      "build:w": "yarn build -w",
-      "lint:eslint": "eslint --quiet \"**/*.{js,jsx,ts,tsx}\"",
-      "lint:styles": "stylelint src/**/*.scss",
-      "lint": "run-p lint:*",
-      "preview": "vite preview"
-    },
-    "dependencies": {
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "react-innertext": "^1.1.5"
-    },
-    "devDependencies": {
-      "@types/react": "^18.0.17",
-      "@types/react-dom": "^18.0.6",
-      "@typescript-eslint/eslint-plugin": "^5.0.0",
-      "@typescript-eslint/parser": "^5.0.0",
-      "@vitejs/plugin-react": "^2.1.0",
-      "bootstrap": "^4.6.1",
-      "eslint": "^8.18.0",
-      "eslint-config-next": "^12.1.6",
-      "eslint-config-weseek": "^2.1.0",
-      "eslint-import-resolver-typescript": "^3.2.5",
-      "eslint-plugin-import": "^2.26.0",
-      "eslint-plugin-jest": "^27.1.0",
-      "eslint-plugin-react": "^7.30.1",
-      "eslint-plugin-react-hooks": "^4.6.0",
-      "eslint-plugin-regex": "^1.10.0",
-      "jest": "^29.1.2",
-      "sass": "^1.55.0",
-      "typescript": "^4.6.4",
-      "vite": "^3.2.5"
-    },
-    "growiPlugin": {
-      "schemaVersion": "4",
-      "types": [
-        "theme"
-      ],
-      "themes": [
-        {
-          "name": "Konvergo",
-          "manifestKey": "src/styles/style.scss",
-          "schemeType": "light",
-          "lightBg": "#FAFCFE",
-          "darkBg": "#D1D3DB",
-          "lightSidebar": "#F9E4EB",
-          "darkSidebar": "#242930",
-          "lightIcon": "#242930",
-          "darkIcon": "#EC0B43",
-          "createBtn": "#242930"
-        }
-      ]
-    }
+    "themes": [
+      {
+        "name": "Numigi",
+        "manifestKey": "src/styles/style.scss",
+        "schemeType": "light",
+        "lightBg": "#EEEFF2",
+        "darkBg": "#D1D3DB",
+        "lightSidebar": "#F3CD88",
+        "darkSidebar": "#1F2128",
+        "lightIcon": "#1F2128",
+        "darkIcon": "#EBB845",
+        "createBtn": "#1F2128"
+      }
+    ]
   }
+}

@@ -1,6 +1,6 @@
-# GROWI Plugin Konvergo Theme
+# GROWI Plugin Numigi Theme
 
-> A GROWI plugin to add the Konvergo brand flavor.
+> A GROWI plugin to add the Numigi brand flavor.
 
 ## TBD
 
