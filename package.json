@@ -1,6 +1,6 @@
 {
-  "name": "growi-plugin-theme-konvergo",
-  "version": "0.1.1-1",
+  "name": "konvergo-docs-theme",
+  "version": "1.0.0",
   "description": "GROWI plugin for the Konvergo theme",
   "license": "MIT",
   "main": "dist/libs/index.js",
