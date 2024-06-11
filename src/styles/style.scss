@@ -1,5 +1,4 @@
 @use './variables' as *;
-@use './bootstrap/variables' as *;
 @use './theme/hsl-functions' as hsl;
 
 @use './atoms/alert' as *;
@@ -40,7 +39,7 @@
 
   // Links
   --bs-link-color: hsl(var(--bs-link-color-hs), var(--bs-link-color-l));
-  --bs-link-color-hs: 228,13%;
+  --bs-link-color-hs: 228, 13%;
   --bs-link-color-l: 54%;
   --bs-link-color-rgb: var(--bs-link-color);
   --bs-link-hover-color: var(--primary);
@@ -49,23 +48,23 @@
 }
 
 :root[data-bs-theme=light] {
-  --primary: hsl(var(--primary-hs),var(--primary-l)) !important;
-  --primary-hs: 345,91%;
+  --primary: hsl(var(--primary-hs), var(--primary-l)) !important;
+  --primary-hs: 345, 91%;
   --primary-l: 48%;
-  --secondary: hsl(var(--secondary-hs),var(--secondary-l)) !important;
-  --secondary-hs: 208,7%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l)) !important;
+  --secondary-hs: 208, 7%;
   --secondary-l: 4var(--bg-color-global)6%;
 
   // Background colors
-  --bgcolor-global: hsl(var(--bgcolor-global-hs),var(--bgcolor-global-l));
-  --bgcolor-global-hs: 210,67%;
+  --bgcolor-global: hsl(var(--bgcolor-global-hs), var(--bgcolor-global-l));
+  --bgcolor-global-hs: 210, 67%;
   --bgcolor-global-l: 99%;
   --bgcolor-inline-code: var(--bs-body-color); //optional
   --bgcolor-card: var(--primary);
   --bgcolor-blinked-section: #{hsl.alpha(var(--primary), 90%)};
 
-  --white-1000: hsl(var(--white-1000-hs),var(--white-1000-l));
-  --white-1000-hs: 225,13%;
+  --white-1000: hsl(var(--white-1000-hs), var(--white-1000-l));
+  --white-1000-hs: 225, 13%;
   --white-1000-l: 94%;
 }
 
@@ -233,7 +232,7 @@ a {
 }
 
 :root[data-bs-theme=light] .list-group-item {
-  --bs-list-group-action-hover-bg: hsla(var(--primary-hs),var(--primary-l), .6);
+  --bs-list-group-action-hover-bg: hsla(var(--primary-hs), var(--primary-l), .6);
   --bs-list-group-active-bg: var(--primary);
   border-radius: 5px;
 
