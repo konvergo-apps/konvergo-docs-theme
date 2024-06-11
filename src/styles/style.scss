@@ -1,39 +1,32 @@
 @use './theme/hsl-functions' as hsl;
-
 @use './atoms/alert' as *;
 @use './atoms/button' as *;
 @use './atoms/typography' as *;
 @use './atoms/code' as *;
 @use './atoms/count-pill-badge' as *;
 @use './atoms/dropdown' as *;
-
 @use './molecules/page-editor-mode-manager' as *;
 @use './molecules/page-view' as *;
-
 @use './pages/login' as *;
-
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@use './utils/variables' as *;
+@import 'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
 
 
 // META
-/* Regroups native variables that are used across the website */
-:root[data-bs-theme=light] {
-  --grw-sidebar-nave-bg: var(--bs-body-color);
 
+/* Regroups native variables that are used across the website */
+:root[data-bs-theme="light"] {
+  --grw-sidebar-nave-bg: var(--bs-body-color);
   --grw-sidebar-nav-btn-color: #EEEFF2;
   --grw-sidebar-nav-btn-hover-bg: #343433;
   --grw-sidebar-nav-btn-hover-color: #EEEFF2;
   --grw-sidebar-nav-btn-active-color: #EEEFF2;
   --grw-sidebar-nav-btn-active-bg: #474746;
-
   --grw-highlight-100: var(--primary);
-
   --bs-body-color: hsl(var(--bs-body-color-hs), var(--bs-body-color-l));
   --bs-body-color-hs: 215, 14%;
   --bs-body-color-l: 16%;
-
   --bs-body-bg: var(--bgcolor-global);
-
   --bs-code-color: var(--primary);
 
   // Links
@@ -42,26 +35,24 @@
   --bs-link-color-l: 54%;
   --bs-link-color-rgb: var(--bs-link-color);
   --bs-link-hover-color: var(--primary);
-
   --grw-sidebar-head-bg: var(--bs-body-color);
 }
 
-:root[data-bs-theme=light] {
+:root[data-bs-theme="light"] {
   --primary: hsl(var(--primary-hs), var(--primary-l)) !important;
   --primary-hs: 345, 91%;
   --primary-l: 48%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l)) !important;
   --secondary-hs: 208, 7%;
-  --secondary-l: 4var(--bg-color-global)6%;
+  --secondary-l: var(--bg-color-global)6%;
 
   // Background colors
   --bgcolor-global: hsl(var(--bgcolor-global-hs), var(--bgcolor-global-l));
   --bgcolor-global-hs: 210, 67%;
   --bgcolor-global-l: 99%;
-  --bgcolor-inline-code: var(--bs-body-color); //optional
+  --bgcolor-inline-code: var(--bs-body-color); // optional
   --bgcolor-card: var(--primary);
   --bgcolor-blinked-section: #{hsl.alpha(var(--primary), 90%)};
-
   --white-1000: hsl(var(--white-1000-hs), var(--white-1000-l));
   --white-1000-hs: 225, 13%;
   --white-1000-l: 94%;
@@ -72,17 +63,17 @@
   background-color: var(--primary) !important;
 }
 
-:root[data-bs-theme=light] .sidebar-contents-container {
+:root[data-bs-theme="light"] .sidebar-contents-container {
   background-color: #F9E4EB !important;
   border-right: 4px solid var(--primary);
 
   &.open {
     border: solid 2px var(--primary);
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 20px 20px;
   }
 }
 
-:root[data-bs-theme=light] .grw-sidebar-nav {
+:root[data-bs-theme="light"] .grw-sidebar-nav {
   // background-color: var(--primary);
   background-color: #242930;
 
@@ -133,7 +124,7 @@
 }
 
 // COMPONENTS
-:root[data-bs-theme=light] .btn {
+:root[data-bs-theme="light"] .btn {
   &-copy {
     border: none;
   }
@@ -152,10 +143,10 @@
 .growi {
   #page-editor {
     .cm-activeLine {
-      background-color: rgba(245, 190, 92, 0.23);
+      background-color: rgba(245, 190, 92, 23%);
 
       &Gutter {
-        background-color: rgba(245, 190, 92, 0.23);
+        background-color: rgba(245, 190, 92, 23%);
       }
     }
   }
@@ -230,8 +221,8 @@ a {
   border: none !important;
 }
 
-:root[data-bs-theme=light] .list-group-item {
-  --bs-list-group-action-hover-bg: hsla(var(--primary-hs), var(--primary-l), .6);
+:root[data-bs-theme="light"] .list-group-item {
+  --bs-list-group-action-hover-bg: hsla(var(--primary-hs), var(--primary-l), 60%);
   --bs-list-group-active-bg: var(--primary);
   border-radius: 5px;
 
@@ -240,17 +231,17 @@ a {
   }
 }
 
-:root[data-bs-theme=light] .dropdown {
+:root[data-bs-theme="light"] .dropdown {
 
   &-menu {
-    --bs-dropdown-bg: hsl(210, 11%, 96%, .7);
+    --bs-dropdown-bg: hsl(210, 11%, 96%, 70%);
     --bs-dropdown-border-color: #D1D3DB;
     --bs-dropdown-link-active-color: #000;
     --bs-dropdown-link-active-bg: #F3CD88;
     --bs-dropdown-link-color: #000;
     --bs-dropdown-link-hover-color: #000;
-    --bs-dropdown-link-hover-bg: hsla(var(--primary-hs), var(--primary-l), .2);
-    --bs-dropdown-box-shadow: 0px 4px 17px rgba(0, 0, 0, .15);
+    --bs-dropdown-link-hover-bg: hsla(var(--primary-hs), var(--primary-l), 20%);
+    --bs-dropdown-box-shadow: 0px 4px 17px rgba(0, 0, 0, 15%);
     backdrop-filter: blur(15px);
   }
 
@@ -259,13 +250,13 @@ a {
   }
 }
 
-:root[data-bs-theme=light] .form {
+:root[data-bs-theme="light"] .form {
   &-control {
-    background-color: #FFFFFF;
+    background-color: #FFF;
   }
 
   &-check-input {
-    --bs-form-check-bg: #FFFFFF;
+    --bs-form-check-bg: #FFF;
 
     &:checked {
       background-color: var(--primary);
@@ -280,7 +271,7 @@ a {
 }
 
 // ADMINISTRATION
-:root[data-bs-theme=light] .admin-page .list-group-item {
+:root[data-bs-theme="light"] .admin-page .list-group-item {
   --bs-list-group-active-bg: var(--white-1000);
 
   &-action {
