@@ -37,13 +37,13 @@
         "name": "Konvergo",
         "manifestKey": "src/styles/style.scss",
         "schemeType": "light",
-        "lightBg": "#EEEFF2",
-        "darkBg": "#D1D3DB",
-        "lightSidebar": "#F3CD88",
-        "darkSidebar": "#1F2128",
-        "lightIcon": "#1F2128",
-        "darkIcon": "#EBB845",
-        "createBtn": "#1F2128"
+        "lightBg": "#F9E4EB",
+        "darkBg": "#EC0B4333",
+        "lightSidebar": "#242930",
+        "darkSidebar": "#242930",
+        "lightIcon": "#FAFCFE",
+        "darkIcon": "#FAFCFE",
+        "createBtn": "#EB0B43"
       }
     ]
   }
