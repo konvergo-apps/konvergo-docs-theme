@@ -9,8 +9,9 @@
   "scripts": {
     "build": "vite build",
     "build:w": "yarn build -w",
-    "lint:styles": "stylelint src/**/*.scss",
-    "lint": "run-p lint:*",
+    "lint": "stylelint src/**/*.scss",
+    "lint:apply": "stylelint --fix src/**/*.scss",
+    "prepare": "husky",
     "test": "vitest run"
   },
   "devDependencies": {
