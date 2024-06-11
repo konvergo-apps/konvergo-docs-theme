@@ -27,7 +27,6 @@
   --bs-body-color-hs: 215, 14%;
   --bs-body-color-l: 16%;
   --bs-body-bg: var(--bgcolor-global);
-  --bs-code-color: var(--primary);
 
   // Links
   --bs-link-color: hsl(var(--bs-link-color-hs), var(--bs-link-color-l));
@@ -50,7 +49,6 @@
   --bgcolor-global: hsl(var(--bgcolor-global-hs), var(--bgcolor-global-l));
   --bgcolor-global-hs: 210, 67%;
   --bgcolor-global-l: 99%;
-  --bgcolor-inline-code: var(--bs-body-color); // optional
   --bgcolor-card: var(--primary);
   --bgcolor-blinked-section: #{hsl.alpha(var(--primary), 90%)};
   --white-1000: hsl(var(--white-1000-hs), var(--white-1000-l));
@@ -173,10 +171,6 @@
           border-bottom: solid 1.5px #D80E41;
         }
       }
-    }
-
-    code {
-      border: none;
     }
   }
 }
