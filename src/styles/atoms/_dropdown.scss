@@ -1,15 +1,21 @@
 @use '../utils/variables' as *;
+@use './mixins/shadows' as *;
 
-.dropdown {
+$prefix: '--bs-dropdown';
+
+:root[data-bs-theme="light"] .dropdown {
   &-menu {
-    --bs-dropdown-bg: hsl(210, 11%, 96%, .7);
-    --bs-dropdown-border-color: #D1D3DB;
-    --bs-dropdown-link-active-color: #000;
-    --bs-dropdown-link-active-bg: #F3CD88;
-    --bs-dropdown-link-color: #000;
-    --bs-dropdown-link-hover-color: #000;
-    --bs-dropdown-link-hover-bg: hsla(var(--primary-hs), var(--primary-l), .2);
-    --bs-dropdown-box-shadow: 0px 4px 17px rgba(0, 0, 0, .15);
+    #{$prefix}-bg: #F5F6F7B2;
+    #{$prefix}-border-color: $black-300;
+    #{$prefix}-border-radius: 7px;
+    #{$prefix}-border-width: 1px;
+    #{$prefix}-link-color: $black-1000;
+    #{$prefix}-link-hover-color: $black-1000;
+    #{$prefix}-link-hover-bg: $red-200;
+    #{$prefix}-link-active-color: $black-1000;
+    #{$prefix}-link-active-bg: $red-300;
     backdrop-filter: blur(15px);
+
+    @include shadow-100($black-1000, 10%);
   }
 }
