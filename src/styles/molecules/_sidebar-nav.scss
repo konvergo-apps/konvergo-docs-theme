@@ -1,0 +1,22 @@
+@use '../utils/variables' as *;
+
+$prefix: '--bs-btn';
+
+:root[data-bs-theme='light'] .grw-sidebar-nav {
+  background-color: $black-1000;
+
+  .btn {
+    &-primary {
+      #{$prefix}-color: $black-600;
+      #{$prefix}-hover-bg: $black-1000;
+    }
+
+    &.active {
+      color: $white-800;
+
+      &::after {
+        background-color: $white-800;
+      }
+    }
+  }
+}
