@@ -55,21 +55,6 @@
   --white-1000-l: 94%;
 }
 
-// NAVIGATION & SIDEBAR
-.grw-navigation-draggable-line {
-  background-color: var(--primary) !important;
-}
-
-:root[data-bs-theme="light"] .sidebar-contents-container {
-  background-color: #F9E4EB !important;
-  border-right: 4px solid var(--primary);
-
-  &.open {
-    border: solid 2px var(--primary);
-    border-radius: 20px 20px;
-  }
-}
-
 // COMPONENTS
 :root[data-bs-theme="light"] .btn {
   &-copy {
