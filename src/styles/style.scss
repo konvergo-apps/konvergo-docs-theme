@@ -6,6 +6,7 @@
 @use './atoms/count-pill-badge' as *;
 @use './atoms/dropdown' as *;
 @use './atoms/link' as *;
+@use './atoms/list-group' as *;
 @use './molecules/page-editor-mode-manager' as *;
 @use './molecules/page-view' as *;
 @use './pages/login' as *;
@@ -24,9 +25,8 @@
   --grw-sidebar-nav-btn-active-color: #EEEFF2;
   --grw-sidebar-nav-btn-active-bg: #474746;
   --grw-highlight-100: var(--primary);
-  --bs-body-color: hsl(var(--bs-body-color-hs), var(--bs-body-color-l));
-  --bs-body-color-hs: 215, 14%;
-  --bs-body-color-l: 16%;
+  --bs-body-color: $black-1000;
+  --bs-secondary-color: $black-1000;
   --bs-body-bg: var(--bgcolor-global);
 
   // Links
@@ -216,15 +216,6 @@ a {
   border: none !important;
 }
 
-:root[data-bs-theme="light"] .list-group-item {
-  --bs-list-group-action-hover-bg: hsla(var(--primary-hs), var(--primary-l), 60%);
-  --bs-list-group-active-bg: var(--primary);
-  border-radius: 5px;
-
-  .material-symbols-outlined {
-    color: var(--bs-body-color);
-  }
-}
 
 :root[data-bs-theme="light"] .dropdown {
 

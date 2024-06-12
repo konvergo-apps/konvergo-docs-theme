@@ -1,0 +1,22 @@
+@use '../utils/variables' as *;
+
+$prefix: '--bs-list-group';
+
+.list-group {
+  &-item {
+    &.active {
+      color: $white-800 !important;
+    }
+  }
+}
+
+:root[data-bs-theme='light'] .list-group {
+  &-item {
+    #{$prefix}-active-bg: $red-1000;
+
+    &-action {
+      #{$prefix}-action-hover-bg: $red-100;
+      #{$prefix}-action-active-bg: $red-200;
+    }
+  }
+}
