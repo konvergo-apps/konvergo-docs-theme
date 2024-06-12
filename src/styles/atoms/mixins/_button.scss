@@ -3,6 +3,7 @@
 @mixin common {
   border-width: 2px;
   border-radius: 6px;
+
   @include typography;
 }
 
@@ -27,6 +28,7 @@
   --bs-btn-disabled-color: #{$white-800};
   --bs-btn-disabled-bg: #{$red-200};
   --bs-btn-disabled-border-color: #{$red-200};
+
   @include common;
 }
 
@@ -45,6 +47,7 @@
   --bs-btn-disabled-color: #{$red-200};
   --bs-btn-disabled-bg: #F5F0F1;
   --bs-btn-disabled-border-color: #F5F0F1;
+
   @include common;
 }
 
@@ -62,6 +65,7 @@
   --bs-btn-disabled-color: #B2B2B2;
   --bs-btn-disabled-bg: #F2E7C9;
   --bs-btn-disabled-border-color: #F2E7C9;
+
   @include common;
 }
 
@@ -79,6 +83,7 @@
   --bs-btn-disabled-color: #EFEFEF;
   --bs-btn-disabled-bg: #BDBDBC;
   --bs-btn-disabled-border-color: #BDBDBC;
+
   @include common;
 }
 
@@ -96,6 +101,8 @@
   --bs-btn-disabled-color: #EFEFEF !important;
   --bs-btn-disabled-bg: #BDBDBC !important;
   --bs-btn-disabled-border-color: #BDBDBC !important;
+
   padding: .3rem .5rem;
+
   @include common;
 }
