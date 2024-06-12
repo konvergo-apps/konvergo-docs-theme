@@ -12,6 +12,7 @@
 @use './organisms/sidebar' as *;
 @use './pages/login' as *;
 @use './utils/variables' as *;
+@use './settings/global' as *;
 @import 'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
 
 
@@ -36,7 +37,6 @@
   --bs-link-color-l: 54%;
   --bs-link-color-rgb: var(--bs-link-color);
   --bs-link-hover-color: var(--primary);
-  --grw-sidebar-head-bg: var(--bs-body-color);
 }
 
 :root[data-bs-theme="light"] {

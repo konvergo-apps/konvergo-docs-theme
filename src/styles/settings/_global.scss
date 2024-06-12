@@ -1,0 +1,5 @@
+@use '../utils/variables' as *;
+
+:root[data-bs-theme='light'] {
+  --grw-sidebar-head-bg: #{$black-1000};
+}
