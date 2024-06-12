@@ -1,47 +1,39 @@
+@mixin typo-spec($size, $weight, $height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
 .growi {
   font-family: 'Be Vietnam Pro';
 
   .wiki {
     h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      line-height: 5.38rem;
+      @include typo-spec(3rem, 700, 5.38rem);
     }
 
     h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 3.5rem;
+      @include typo-spec(2rem, 600, 3.5rem);
     }
 
     h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      line-height: 3.13rem;
+      @include typo-spec(1.5rem, 600, 3.13rem);
     }
 
     h4 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      line-height: 2.75rem;
+      @include typo-spec(1.2rem, 600, 2.75rem);
     }
 
     h5 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      line-height: 2.25rem;
+      @include typo-spec(1.1rem, 600, 2.25rem);
     }
 
     h6 {
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 1.75rem;
+      @include typo-spec(1rem, 600, 1.75rem);
     }
 
     p {
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 2.2rem;
+      @include typo-spec(1rem, 400, 2.2rem);
     }
   }
 }
