@@ -3,6 +3,10 @@
 $prefix: '--bs-list-group';
 
 .list-group {
+  #{$prefix}-border-color: $red-200;
+  #{$prefix}-color: $black-1000;
+  #{$prefix}-action-hover-color: $black-1000;
+
   &-item {
     &.active {
       color: $white-800 !important;
