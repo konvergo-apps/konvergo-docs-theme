@@ -24,3 +24,12 @@ $prefix: '--bs-list-group';
     }
   }
 }
+
+:root[data-bs-theme="light"] .admin-page .list-group-item {
+  #{$prefix}-active-bg: $black-1000;
+
+  &-action {
+    #{$prefix}-action-hover-bg: #E5E5E5;
+    #{$prefix}-action-active-bg: #DBDBDB;
+  }
+}

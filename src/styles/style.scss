@@ -10,7 +10,6 @@
 @use './atoms/input' as *;
 @use './molecules/page-editor-mode-manager' as *;
 @use './molecules/page-view' as *;
-@use './molecules/nav' as *;
 @use './organisms/sidebar' as *;
 @use './pages/login' as *;
 @use './utils/variables' as *;
@@ -48,16 +47,6 @@
   --white-1000: hsl(var(--white-1000-hs), var(--white-1000-l));
   --white-1000-hs: 225, 13%;
   --white-1000-l: 94%;
-}
-
-// ADMINISTRATION
-:root[data-bs-theme="light"] .admin-page .list-group-item {
-  --bs-list-group-active-bg: var(--white-1000);
-
-  &-action {
-    --bs-list-group-action-hover-bg: #E5E5E5;
-    --bs-list-group-action-active-bg: #DBDBDB;
-  }
 }
 
 #grw-site-name a {
