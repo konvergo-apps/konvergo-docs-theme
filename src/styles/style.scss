@@ -10,6 +10,7 @@
 @use './atoms/input' as *;
 @use './molecules/page-editor-mode-manager' as *;
 @use './molecules/page-view' as *;
+@use './molecules/nav' as *;
 @use './organisms/sidebar' as *;
 @use './pages/login' as *;
 @use './utils/variables' as *;
@@ -28,13 +29,6 @@
   --grw-sidebar-nav-btn-active-bg: #474746;
   --grw-highlight-100: var(--primary);
   --bs-body-bg: var(--bgcolor-global);
-
-  // Links
-  --bs-link-color: hsl(var(--bs-link-color-hs), var(--bs-link-color-l));
-  --bs-link-color-hs: 228, 13%;
-  --bs-link-color-l: 54%;
-  --bs-link-color-rgb: var(--bs-link-color);
-  --bs-link-hover-color: var(--primary);
 }
 
 :root[data-bs-theme="light"] {
@@ -54,33 +48,6 @@
   --white-1000: hsl(var(--white-1000-hs), var(--white-1000-l));
   --white-1000-hs: 225, 13%;
   --white-1000-l: 94%;
-}
-
-
-a {
-  &.link-opacity-75-hover {
-    color: var(--bs-body-color);
-    border-bottom: solid 1.5px var(--bs-body-color);
-
-    &:hover {
-      color: #343433;
-      border-bottom: solid 1.5px #343433;
-    }
-
-    &:active {
-      color: #474746;
-      border-bottom: solid 1.5px #474746;
-    }
-  }
-}
-
-.card {
-  padding: 1rem .5rem;
-}
-
-.comment-form .bg-comment {
-  background-color: transparent !important;
-  border: none !important;
 }
 
 // ADMINISTRATION
