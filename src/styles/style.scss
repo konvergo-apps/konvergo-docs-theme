@@ -56,23 +56,6 @@
   --white-1000-l: 94%;
 }
 
-// COMPONENTS
-:root[data-bs-theme="light"] .btn {
-  &-copy {
-    border: none;
-  }
-
-  // &-page-item-control {
-  //   --bs-btn-color: #FFFFFF80;
-  //   --bs-btn-bg: transparent;
-  //   --bs-btn-hover-color: #FFFFFFBF;
-  //   --bs-btn-hover-bg: transparent;
-  //   --bs-btn-active-color: #EEEFF2;
-  //   --bs-btn-active-bg: transparent;
-  //   --bs-btn-border-width: 0px;
-  // }
-}
-
 
 a {
   &.link-opacity-75-hover {
