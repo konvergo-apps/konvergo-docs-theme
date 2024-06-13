@@ -72,42 +72,6 @@
   // }
 }
 
-.growi {
-  #page-editor {
-    .cm-activeLine {
-      background-color: rgba(245, 190, 92, 23%);
-
-      &Gutter {
-        background-color: rgba(245, 190, 92, 23%);
-      }
-    }
-  }
-
-  .wiki {
-    a {
-      &:not(.alert-link) {
-        color: var(--bs-body-color) !important;
-        text-decoration: none;
-        border-bottom: solid 1.5px var(--bs-body-color);
-
-        &:hover {
-          color: #343433 !important;
-          border-bottom: solid 1.5px #343433;
-        }
-
-        &:active {
-          color: #474746 !important;
-          border-bottom: solid 1.5px #474746;
-        }
-
-        &:visited {
-          color: #D80E41 !important;
-          border-bottom: solid 1.5px #D80E41;
-        }
-      }
-    }
-  }
-}
 
 a {
   &.link-opacity-75-hover {
@@ -117,20 +81,6 @@ a {
     &:hover {
       color: #343433;
       border-bottom: solid 1.5px #343433;
-    }
-
-    &:active {
-      color: #474746;
-      border-bottom: solid 1.5px #474746;
-    }
-  }
-
-  &.toc-link {
-    color: var(--bs-body-color);
-
-    &:hover {
-      color: #343433;
-      border-bottom: solid 1px #343433;
     }
 
     &:active {
