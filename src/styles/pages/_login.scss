@@ -1,6 +1,7 @@
 @use '../atoms/mixins/button' as button;
+@use '../settings/variables' as *;
 
-:root[data-bs-theme=light] .nologin {
+:root[data-bs-theme="light"] .nologin {
   // References the image runtime path
   background: url('../images/background.png');
   background-repeat: no-repeat;
@@ -9,8 +10,9 @@
 
   .input-group {
     input {
-      color: var(--bgcolor-global);
-      background: #353945;
+      color: $black-600;
+      background: $white-1000;
+      border: solid 1px $black-300
     }
   }
 
@@ -19,38 +21,41 @@
 
     &-login {
       @include button.primary;
+
       width: 100%;
       padding: 1rem 6rem;
 
       .material-symbols-outlined {
-        color: var(--bs-body-color);
+        color: $white-800;
       }
 
       .flex-grow-1 {
-        color: var(--bs-body-color);
+        color: $white-800;
       }
     }
 
     &-register {
       @include button.primary;
+
       width: 100%;
       padding: 1rem 6rem;
 
       .material-symbols-outlined {
-        color: var(--bs-body-color);
+        color: $white-800;
       }
 
       .flex-grow-1 {
-        color: var(--bs-body-color);
+        color: $white-800;
       }
     }
   }
 
   .nologin-header {
     width: 400px;
+
     // padding: 1.5rem;
     padding-bottom: 30px;
-    background: var(--primary);
+    background: #EFF1F3;
 
     h1 {
       display: none;
@@ -60,8 +65,8 @@
   .nologin-dialog {
     width: 400px;
     padding: 1.5rem;
-    background: var(--bs-body-color);
-    box-shadow: 0px 24px 45px 0px rgba(36, 36, 35, 0.23);
+    background: $white-800;
+    box-shadow: 0 24px 45px 0 rgb(36 36 35 / 23%);
   }
 
   .link-growi-org {
