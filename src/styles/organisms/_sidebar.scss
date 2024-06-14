@@ -8,25 +8,6 @@ $prefix: '--bs-btn';
     border-right: 4px solid $red-1000;
   }
 
-  .grw-sidebar-nav {
-    background-color: $black-1000;
-
-    .btn {
-      &-primary {
-        #{$prefix}-color: $black-600;
-        #{$prefix}-hover-bg: $black-1000;
-      }
-
-      &.active {
-        color: $white-800;
-
-        &::after {
-          background-color: $white-800;
-        }
-      }
-    }
-  }
-
   .grw-navigation-draggable-line {
     background-color: $red-1000;
   }
