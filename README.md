@@ -17,6 +17,10 @@ Many articles and blogs refer to this type of architecture convention;
 - [Atomic Design System Architecture with SCSS, ITCSS](https://gael-boyenval.gitbook.io/atomic-design-css-architecture-with-itcss-bem-sass/principles/atomic-design-system)
 - [Atomic Design - Your Ultimate Guide to Scalable & Modular CSS (Sass)](https://blog.alexdevero.com/atomic-design-scalable-modular-css-sass/)
 
+## Development
+
+You can update this theme by installing it in a [GROWI development environment](https://docs.growi.org/en/dev/startup-v5/dev-env.html).
+
 ## Ressources
 
 This plugin design is based off [GROWI's Vivid Internet plugin example](https://github.com/weseek/growi-plugin-theme-vivid-internet).
