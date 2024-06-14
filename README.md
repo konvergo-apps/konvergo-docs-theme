@@ -1,47 +1,27 @@
-# GROWI Plugin Numigi Theme
+# Konvergo DOCS theme
 
-> A GROWI plugin to add the Numigi brand flavor.
+This repository contains a [GROWI](https://github.com/weseek/growi) plugin for the Konvergo custom UI theme.
 
-## TBD
+## Building
 
-- [ ] Login page
-  - [ ] SSO buttons
-- [ ] Navigation sidebar
-  - [ ] Icons
-- [x] Header
-- [x] Administration panel
-- [ ] Components
-  - [x] Buttons
-  - [ ] Links
-    - [x] Autonomous
-    - [ ] Inline & external
-  - [x] Dropdowns
-  - [x] Checkboxes
-  - [x] Badges
-  - [x] Alerts
-  - [ ] List items
-  - [ ] Text inputs
-    - [ ] Input states
-  - [x] Code blocks and inline code
-  - [ ] Modals
-  - [x] Headings
-- [x] Various font weight adjustements
-- [ ] Optimizations for Saas
+The theme is automatically linted and built before a commit using [Husky's git pre-commit](https://typicode.github.io/husky/).
 
-## About The Project
+## Structure
 
-This theme is based off a GROWI preset's themes. It is built for GROWI version 7.0.0 and onward.
+The structure is divided following a Sass atomic structure. This helps creating and maintaining components rules in many files, from the least complex element to a complete page.
 
-## Contributing
+![alt text](sass-atomic.png)
 
-1. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-2. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-3. Push to the Branch (`git push origin feature/AmazingFeature`)
-4. Open a Pull Request
+Many articles and blogs refer to this type of architecture convention;
 
-## Resources
+- [Atomic Design System Architecture with SCSS, ITCSS](https://gael-boyenval.gitbook.io/atomic-design-css-architecture-with-itcss-bem-sass/principles/atomic-design-system)
+- [Atomic Design - Your Ultimate Guide to Scalable & Modular CSS (Sass)](https://blog.alexdevero.com/atomic-design-scalable-modular-css-sass/)
 
-- [Othneildrew README Template](https://github.com/othneildrew/Best-README-Template)
-- [Choosing an Open Source License](https://choosealicense.com/)
-- [GROWI Documentation](https://docs.growi.org/)
-- [GROWI Install Plugins](https://docs.growi.org/en/admin-guide/management-cookbook/plugins.html#how-to-install-plugins)
+## Ressources
+
+This plugin design is based off [GROWI's Vivid Internet plugin example](https://github.com/weseek/growi-plugin-theme-vivid-internet).
+
+## Update checklist
+
+- [ ] Upgrade `version` in `package.json`
+- [ ] Check for upstream breaking changes
