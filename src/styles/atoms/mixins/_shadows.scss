@@ -1,4 +1,4 @@
-@use '../../utils/variables' as *;
+@use '../../settings/variables' as *;
 
 @mixin shadow-100($color, $opacity) {
   box-shadow: 0 6px 15px rgba($color, $opacity);

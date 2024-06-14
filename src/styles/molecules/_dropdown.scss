@@ -1,5 +1,5 @@
-@use '../utils/variables' as *;
-@use './mixins/shadows' as *;
+@use '../settings/variables' as *;
+@use '../atoms/mixins/shadows' as *;
 
 $prefix: '--bs-dropdown';
 

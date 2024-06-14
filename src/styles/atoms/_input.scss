@@ -1,4 +1,4 @@
-@use '../utils/variables' as *;
+@use '../settings/variables' as *;
 
 @mixin input-focus($color) {
   box-shadow: 0 0 0 .25rem $color;

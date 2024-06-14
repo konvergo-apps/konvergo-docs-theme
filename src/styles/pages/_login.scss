@@ -1,7 +1,7 @@
 @use '../atoms/mixins/button' as button;
-@use '../utils/variables' as *;
+@use '../settings/variables' as *;
 
-:root[data-bs-theme=light] .nologin {
+:root[data-bs-theme="light"] .nologin {
   // References the image runtime path
   background: url('../images/background.png');
   background-repeat: no-repeat;
@@ -21,6 +21,7 @@
 
     &-login {
       @include button.primary;
+
       width: 100%;
       padding: 1rem 6rem;
 
@@ -35,6 +36,7 @@
 
     &-register {
       @include button.primary;
+
       width: 100%;
       padding: 1rem 6rem;
 
@@ -50,6 +52,7 @@
 
   .nologin-header {
     width: 400px;
+
     // padding: 1.5rem;
     padding-bottom: 30px;
     background: #EFF1F3;
@@ -63,7 +66,7 @@
     width: 400px;
     padding: 1.5rem;
     background: $white-800;
-    box-shadow: 0px 24px 45px 0px rgba(36, 36, 35, 0.23);
+    box-shadow: 0 24px 45px 0 rgb(36 36 35 / 23%);
   }
 
   .link-growi-org {
