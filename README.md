@@ -4,7 +4,9 @@ This repository contains a [GROWI](https://github.com/weseek/growi) plugin for t
 
 ## Building
 
-The theme is automatically linted and built before a commit using [Husky's git pre-commit](https://typicode.github.io/husky/).
+Run `yarn build` before committing your changes to the branch.
+
+The theme is automatically linted before a commit using [Husky's git pre-commit](https://typicode.github.io/husky/).
 
 ## Structure
 

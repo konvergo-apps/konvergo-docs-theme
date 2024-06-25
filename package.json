@@ -1,18 +1,19 @@
 {
   "name": "konvergo-docs-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "GROWI plugin for the Konvergo theme",
   "main": "dist/libs/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "vite build",
+    "build": "yarn pre-commit && vite build",
     "build:w": "yarn build -w",
     "lint": "stylelint src/**/*.scss",
     "lint:apply": "stylelint --fix src/**/*.scss",
     "prepare": "husky",
-    "test": "vitest run"
+    "test": "vitest run",
+    "pre-commit": "yarn test && yarn lint"
   },
   "devDependencies": {
     "@growi/core-styles": "^1.0.0",
