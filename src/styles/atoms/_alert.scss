@@ -1,10 +1,46 @@
+@use '../settings/variables' as *;
+
+@mixin title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@mixin alert($color, $bg) {
+  --bs-alert-color: #{$color};
+  --bs-alert-bg: #{$bg};
+  --bs-alert-border-color: #{$color};
+}
+
 .growi {
   .wiki {
     & .alert {
       &-title {
-        margin: 0;
-        font-size: 1.3rem;
-        font-weight: 500;
+        @include title;
+      }
+
+      &-primary {
+        @include alert($red-1000, $red-100);
+      }
+
+      &-secondary {
+        @include alert($blue-1000, $blue-100);
+      }
+
+      &-success {
+        @include alert('#33C541', '#E9F9E8');
+      }
+
+      &-danger {
+        @include alert($white-800, $red-1000);
+      }
+
+      &-warning {
+        @include alert($yellow-1000, $yellow-100);
+      }
+
+      &-info {
+        @include alert($black-600, '#7C7F831A');
       }
     }
   }
