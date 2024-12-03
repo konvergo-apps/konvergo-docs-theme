@@ -9,6 +9,7 @@
 @use './molecules/list-group' as *;
 @use './molecules/nav' as *;
 @use './molecules/page-editor-mode-manager' as *;
+@use './organisms/comments' as *;
 @use './organisms/sidebar' as *;
 @use './pages/login' as *;
 @use './settings/global' as *;
