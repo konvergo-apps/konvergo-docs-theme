@@ -1,4 +1,5 @@
 @use '../atoms/mixins/button' as button;
+@use '../atoms/mixins/shadows' as *;
 @use '../settings/variables' as *;
 
 :root[data-bs-theme="light"] .nologin {
@@ -10,9 +11,14 @@
 
   .input-group {
     input {
-      color: $black-600;
+      color: $black-1000;
       background: $white-1000;
-      border: solid 1px $black-300
+      border: solid 1px #D0D5DD;
+      border-radius: 8px !important;
+
+      &::placeholder {
+        color: #667085;
+      }
     }
   }
 
@@ -24,14 +30,6 @@
 
       width: 100%;
       padding: 1rem 6rem;
-
-      .material-symbols-outlined {
-        color: $white-800;
-      }
-
-      .flex-grow-1 {
-        color: $white-800;
-      }
     }
 
     &-register {
@@ -39,34 +37,51 @@
 
       width: 100%;
       padding: 1rem 6rem;
+    }
+
+    &-function {
+      @include button.function;
+
+      width: 100%;
+      padding: unset;
+      font-size: 14px;
+      font-weight: 400;
 
       .material-symbols-outlined {
-        color: $white-800;
-      }
-
-      .flex-grow-1 {
-        color: $white-800;
+        display: none;
       }
     }
   }
 
-  .nologin-header {
-    width: 400px;
+  .nologin {
+    &-header {
+      background: #EFF1F3;
 
-    // padding: 1.5rem;
-    padding-bottom: 30px;
-    background: #EFF1F3;
+      img {
+        width: 222px;
+        height: 36px;
+        content: url('../images/logo.png');
+      }
 
-    h1 {
-      display: none;
+      svg {
+        display: none;
+      }
     }
-  }
 
-  .nologin-dialog {
-    width: 400px;
-    padding: 1.5rem;
-    background: $white-800;
-    box-shadow: 0 24px 45px 0 rgb(36 36 35 / 23%);
+    &-dialog {
+      @include shadow-300($black-1000, 20%);
+
+      padding: 1.5rem;
+      background: $white-800;
+
+      label.text-white {
+        color: $black-1000 !important;
+      }
+
+      .text-center {
+        display: none !important;
+      }
+    }
   }
 
   .link-growi-org {

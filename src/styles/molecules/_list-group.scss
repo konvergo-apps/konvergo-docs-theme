@@ -2,21 +2,14 @@
 
 $prefix: '--bs-list-group';
 
-.list-group {
-  #{$prefix}-border-color: $red-200;
+:root[data-bs-theme='light'] .list-group {
+  #{$prefix}-border-color: $black-1000;
   #{$prefix}-color: $black-1000;
   #{$prefix}-action-hover-color: $black-1000;
 
   &-item {
-    &.active {
-      color: $white-800 !important;
-    }
-  }
-}
-
-:root[data-bs-theme='light'] .list-group {
-  &-item {
     #{$prefix}-active-bg: $red-1000;
+    #{$prefix}-active-color: $white-800;
 
     &-action {
       #{$prefix}-action-hover-bg: $red-100;
@@ -25,11 +18,14 @@ $prefix: '--bs-list-group';
   }
 }
 
-:root[data-bs-theme="light"] .admin-page .list-group-item {
-  #{$prefix}-active-bg: $black-1000;
+:root[data-bs-theme="light"] .admin-page .list-group {
+  &-item {
+    #{$prefix}-active-bg: $black-1000;
+    #{$prefix}-active-color: $white-1000;
 
-  &-action {
-    #{$prefix}-action-hover-bg: #E5E5E5;
-    #{$prefix}-action-active-bg: #DBDBDB;
+    &-action {
+      #{$prefix}-action-hover-bg: #E5E5E5;
+      #{$prefix}-action-active-bg: #DBDBDB;
+    }
   }
 }
