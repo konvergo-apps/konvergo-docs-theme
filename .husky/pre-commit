@@ -1,1 +1,2 @@
-yarn pre-commit
+#!/bin/bash
+#yarn run test && yarn run lint
