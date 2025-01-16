@@ -6,24 +6,30 @@
 
 :root[data-bs-theme="light"] .form {
   &-check-input {
+    background-color: $white-1000;
 
     &:focus {
       @include input-focus($blue-200);
     }
 
     &:checked {
-      background-color: $red-1000;
-      border-color: $red-1000;
+      background-color: $blue-1000;
+      border-color: $blue-1000;
     }
   }
 
   &-control {
-    color: $black-600;
+    color: $black-1000;
+    background-color: $white-1000;
+
+    &::placeholder {
+      color: $black-800
+    }
 
     &:focus {
-      @include input-focus($blue-200);
+      @include input-focus($red-200);
 
-      color: $black-600;
+      border-color: $black-600;
     }
   }
 }

@@ -94,3 +94,41 @@ $prefix: '--bs-btn';
 
   @include common;
 }
+
+@mixin function {
+  #{$prefix}-color: $red-1000;
+  #{$prefix}-bg: transparent;
+  #{$prefix}-border-color: transparent;
+  #{$prefix}-hover-color: $red-900;
+  #{$prefix}-hover-bg: transparent;
+  #{$prefix}-hover-border-color: transparent;
+  #{$prefix}-active-color: $red-800;
+  #{$prefix}-active-bg: transparent;
+  #{$prefix}-active-border-color: transparent;
+  #{$prefix}-active-shadow: 0;
+  #{$prefix}-disabled-color: #EFEFEF;
+  #{$prefix}-disabled-bg: #BDBDBC;
+  #{$prefix}-disabled-border-color: #BDBDBC;
+
+  @include common;
+}
+
+@mixin auth {
+  #{$prefix}-color: $red-1000 !important;
+  #{$prefix}-bg: $red-100 !important;
+  #{$prefix}-border-color: $red-100 !important;
+  #{$prefix}-hover-color: $white-800 !important;
+  #{$prefix}-hover-bg: $red-900 !important;
+  #{$prefix}-hover-border-color: $red-900 !important;
+  #{$prefix}-active-color: $white-800 !important;
+  #{$prefix}-active-bg: $red-800 !important;
+  #{$prefix}-active-border-color: $red-800 !important;
+  #{$prefix}-active-shadow: 0 !important;
+  #{$prefix}-disabled-color: #EFEFEF !important;
+  #{$prefix}-disabled-bg: #BDBDBC !important;
+  #{$prefix}-disabled-border-color: #BDBDBC !important;
+  width: 100%;
+  padding: 1rem;
+
+  @include common;
+}
