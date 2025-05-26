@@ -4,7 +4,8 @@
 
 :root[data-bs-theme="light"] .nologin {
   // References the image runtime path
-  background: url('../images/background.png');
+  background: url('../images/background.svg');
+  background-color: $white-1000;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,6 +19,11 @@
 
       &::placeholder {
         color: #667085;
+      }
+
+      &:focus {
+        border-color: $red-1000;
+        box-shadow: 0 0 0 .25rem $red-100;
       }
     }
   }
@@ -55,12 +61,14 @@
 
   .nologin {
     &-header {
-      background: #EFF1F3;
+      background: $white-800;
+      border: 1px solid #C4C4C4;
+      border-bottom: unset;
 
       img {
         width: 222px;
         height: 36px;
-        content: url('../images/logo.png');
+        content: url('../images/logo.svg');
       }
 
       svg {
@@ -73,10 +81,10 @@
     }
 
     &-dialog {
-      @include shadow-300($black-1000, 20%);
-
       padding: 1.5rem;
       background: $white-800;
+      border: 1px solid #C4C4C4;
+      border-top: unset;
 
       label.text-white {
         color: $black-1000 !important;
