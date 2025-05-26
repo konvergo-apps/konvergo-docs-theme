@@ -19,6 +19,7 @@
   }
 
   &-control {
+    padding: .7rem 1.1rem;
     color: $black-1000;
     background-color: $white-1000;
 
@@ -29,7 +30,7 @@
     &:focus {
       @include input-focus($red-200);
 
-      border-color: $black-600;
+      border-color: $red-1000;
     }
   }
 }
